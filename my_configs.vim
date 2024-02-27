@@ -121,7 +121,7 @@ let g:lightline = {
     let g:indent_guides_enable_on_vim_startup = 1
     let g:indent_guides_start_level = 2
     let g:indent_guides_guide_size = 1
-    let g:indent_guides_auto_colors = 0
+    " let g:indent_guides_auto_colors = 0
     autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=white   ctermbg=lightgrey
     autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=white   ctermbg=lightgrey
 
@@ -177,8 +177,7 @@ let g:lightline = {
 
 " Colorscheme
     set background=light
-    " colorscheme solarized
-    colorscheme vim-colors-solarized
+    colorscheme solarized
 
 " Line Numbers
     set number
@@ -191,20 +190,20 @@ let g:lightline = {
     set foldcolumn=0
 
 " Set font according to system
-    if has("mac") || has("macunix")
-        set gfn=Source\ Code\ Pro:h15,IBM\ Plex\ Mono:h14,Hack:h14,Menlo:h15
-    elseif has("win16") || has("win32")
-        set gfn=Source\ Code\ Pro:h12,IBM\ Plex\ Mono:h14,Bitstream\ Vera\ Sans\ Mono:h11
-    elseif has("gui_gtk2")
-        set gfn=Source\ Code\ Pro\ 12,IBM\ Plex\ Mono:h14,:Hack\ 14,Bitstream\ Vera\ Sans\ Mono\ 11
-    elseif has("linux")
-        set gfn=Source\ Code\ Pro\ 12,IBM\ Plex\ Mono:h14,:Hack\ 14,Bitstream\ Vera\ Sans\ Mono\ 11
-    elseif has("unix")
-        set gfn=Monospace\ 11
-    endif
+    " if has("mac") || has("macunix")
+        " set gfn=Source\ Code\ Pro:h15,IBM\ Plex\ Mono:h14,Hack:h14,Menlo:h15
+    " elseif has("win16") || has("win32")
+        " set gfn=Source\ Code\ Pro:h12,IBM\ Plex\ Mono:h14,Bitstream\ Vera\ Sans\ Mono:h11
+    " elseif has("gui_gtk2")
+        " set gfn=Source\ Code\ Pro\ 12,IBM\ Plex\ Mono:h14,:Hack\ 14,Bitstream\ Vera\ Sans\ Mono\ 11
+    " elseif has("linux")
+        " set gfn=Source\ Code\ Pro\ 12,IBM\ Plex\ Mono:h14,:Hack\ 14,Bitstream\ Vera\ Sans\ Mono\ 11
+    " elseif has("unix")
+        " set gfn=Monospace\ 11
+    " endif
 
 
 " Italics
 
-let &t_ZH="\e[3m"
-let &t_ZR="\e[23m"
+" let &t_ZH="\e[3m"
+" let &t_ZR="\e[23m"

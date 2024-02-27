@@ -40,11 +40,11 @@
 
 " Managing tabs
     map <leader>tt :tabnew<cr>
-    map <leader>t3 :tabnext 
-    map <leader>t2 :tabprevious
+    map <leader>t3 :tabnext<cr>
+    map <leader>t2 :tabpreviou<cr>
     map <leader>tw :tabclose<cr>
     map <leader>to :tabonly<cr>
-    map <leader>tm :tabmove 
+    map <leader>tm :tabmove<cr>
 
 " quickly run python file
     au FileType python map <F8> :!clear;python3 %<cr>
